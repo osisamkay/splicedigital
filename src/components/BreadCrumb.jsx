@@ -3,7 +3,7 @@ import React from "react";
 function Breadcrumb({ items }) {
   return (
     <nav
-      className="text-sm font-medium text-ByeWindGrey-dark"
+      className="hidden md:block text-sm font-medium text-ByeWindGrey-dark"
       aria-label="Breadcrumb"
     >
       <ol className="list-none p-0 inline-flex">

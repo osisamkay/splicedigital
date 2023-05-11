@@ -10,9 +10,9 @@ import SearchInput from "./SearchInput";
 
 function Header() {
   return (
-    <header className="bg-white  shadow-lg ">
-      <div className=" h-[72px] flex items-center  justify-between mx-auto px-4 sm:px-6 lg:px-[28px]">
-        <div className="flex flex-row w-[245px] items-center justify-between ">
+    <header className="bg-white  shadow-lg  ">
+      <div className=" h-[72px] flex items-center border-b  justify-between mx-auto px-4 sm:px-6 lg:px-[28px]">
+        <div className="flex flex-row md:w-[245px] items-center justify-between ">
           <SideBarIcon />
           <StarIcon />
           <Breadcrumb

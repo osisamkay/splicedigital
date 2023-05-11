@@ -5,15 +5,13 @@ import Sidebar from "../components/Sidebar";
 
 function Dashboard({ children }) {
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex flex-col md:flex-row h-screen w-full bg-white">
       <Sidebar />
-      <div className="flex-1">
-        <Header className="fixed  w-full  z-10" />
-        <div className="flex justify-center items-center h-[100%-72px]">
-          {children}
-        </div>
+      <div className="flex flex-col flex-1">
+        <Header className=" w-full    z-10" />
+        <div className=" px-7 py-8 flex-1 bg-white">{children}</div>
       </div>
-      {/* <Sidebar /> */}
+      {/* <Sidebar className="hidden md:block" /> */}
     </div>
   );
 }

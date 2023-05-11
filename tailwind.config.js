@@ -13,6 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        ByeWindBackground: "#F7F9FB",
         ByeWindBlack: "#1C1C1C",
         ByeWindGrey: {
           dark: "rgba(0, 0, 0, 0.4)",

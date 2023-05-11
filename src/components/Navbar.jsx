@@ -1,53 +1,69 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+"use client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+import { DotsIcon } from "../assets/icons/dotsIcon";
+import MenuButton from "./menuButton";
 
 function Navbar() {
+  const router = useRouter();
+
+  const NavLinks = [
+    {
+      label: "Overview",
+      path: "/",
+    },
+    {
+      label: "Target",
+      path: "/",
+    },
+    {
+      label: "Budgets",
+      path: "/",
+    },
+    {
+      label: "Users",
+      path: "/",
+    },
+    {
+      label: "Files",
+      path: "/",
+    },
+    {
+      label: "Activities",
+      path: "/",
+    },
+    {
+      label: "Settings",
+      path: "/",
+    },
+  ];
+
   return (
-    <nav className="bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <img
-                className="h-8 w-8"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                alt="Workflow"
-              />
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <NavLink
-                  exact
-                  to="/"
-                  activeClassName="border-b-2 border-white text-white"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  activeClassName="border-b-2 border-white text-white"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  About
-                </NavLink>
-                <NavLink
-                  to="/services"
-                  activeClassName="border-b-2 border-white text-white"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Services
-                </NavLink>
-                <NavLink
-                  to="/contact"
-                  activeClassName="border-b-2 border-white text-white"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Contact
-                </NavLink>
-              </div>
-            </div>
-          </div>
+    <nav className="flex justify-between items-center  bg-white text-black  font-bold ">
+      <ul className="hidden md:flex items-center">
+        {NavLinks.map((link, index) => (
+          <li key={index} className="mr-6">
+            <Link href={link.path}>
+              <p
+                className={`text-sm text-ByeWindGrey-dark hover:text-ByeWindBlack hover:border-b-2 hover:border-ByeWindBlack ${
+                  router.pathname === link.path
+                    ? "text-ByeWindBlack border-b-2 border-ByeWindBlack"
+                    : ""
+                }`}
+              >
+                {link.label}
+              </p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="flex items-center  justify-between">
+        <MenuButton />
+        <div className="w-[200px] flex items-center ml-9  justify-between">
+          <div className="text-ByeWindGrey-dark text-sm">+ Add User</div>
+          <div className="text-ByeWindGrey-dark text-sm"> Add Target</div>
+          <DotsIcon />
         </div>
       </div>
     </nav>

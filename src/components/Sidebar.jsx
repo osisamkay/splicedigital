@@ -8,7 +8,7 @@ import NavigationMenu from "./SideBarNavigationMenu";
 
 function Sidebar() {
   return (
-    <div className="bg-[#fff] text-gray-100 flex flex-col justify-between w-[212px]  border-[rgba(0, 0, 0, 1)] border-r-1">
+    <div className="hidden bg-[#fff] text-gray-100 md:flex flex-col justify-between w-[212px]  border-r-2">
       <div className="container">
         <div className="flex flex-row items-center  align-middle p-6">
           <Image src={ByeWind} alt="user logo" />
