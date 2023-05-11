@@ -2,8 +2,10 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import { DotsIcon } from "../assets/icons/dotsIcon";
-import MenuButton from "./menuButton";
+
+import { DotsIcon } from "../../assets/icons/dotsIcon";
+import MenuButton from "../menuButton";
+
 
 function Navbar() {
   const router = useRouter();
@@ -57,6 +59,13 @@ function Navbar() {
             </Link>
           </li>
         ))}
+        <li className="mr-6">
+          <Link href="/Calculator">
+            <p className="text-sm  text-ByeWindBlack border-b-2 border-ByeWindBlack">
+              Calculator
+            </p>
+          </Link>
+        </li>
       </ul>
       <div className="flex items-center  justify-between">
         <MenuButton />

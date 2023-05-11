@@ -1,12 +1,14 @@
 import React from "react";
 
-import { BellIcon } from "../assets/icons/bellIcon";
-import { CounterClockIcon } from "../assets/icons/counterClockIcon";
-import { SideBarIcon } from "../assets/icons/sidebarIcon";
-import { StarIcon } from "../assets/icons/StarIcon";
-import { SunIcon } from "../assets/icons/sunIcon";
-import Breadcrumb from "./BreadCrumb";
-import SearchInput from "./SearchInput";
+
+import { BellIcon } from "../../assets/icons/bellIcon";
+import { CounterClockIcon } from "../../assets/icons/counterClockIcon";
+import { SideBarIcon } from "../../assets/icons/sidebarIcon";
+import { StarIcon } from "../../assets/icons/StarIcon";
+import { SunIcon } from "../../assets/icons/sunIcon";
+import Breadcrumb from "../BreadCrumb";
+import SearchInput from "../SearchInput";
+
 
 function Header() {
   return (

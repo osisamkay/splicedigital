@@ -1,9 +1,11 @@
 import React from "react";
 
-import { BugIcon } from "../assets/icons/bugIcon";
-import { SubscribeIcon } from "../assets/icons/subscribeIcon";
-import { UserIcon } from "../assets/icons/userIcon";
-import { notification } from "../data/WidgetData";
+
+import { BugIcon } from "../../assets/icons/bugIcon";
+import { SubscribeIcon } from "../../assets/icons/subscribeIcon";
+import { UserIcon } from "../../assets/icons/userIcon";
+import { notification } from "../../data/WidgetData";
+
 
 const NotificationWidget = () => {
   return (

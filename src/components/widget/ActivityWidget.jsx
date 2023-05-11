@@ -3,10 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 
-import { BugIcon } from "../assets/icons/bugIcon";
-import { SubscribeIcon } from "../assets/icons/subscribeIcon";
-import { UserIcon } from "../assets/icons/userIcon";
-import { activities } from "../data/WidgetData";
+import { activities } from "../../data/WidgetData";
 
 
 const ActivityWidget = () => {

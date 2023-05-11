@@ -8,6 +8,7 @@ import { ProfileIcon } from "../assets/icons/profileIcon";
 import { ProjectIcon } from "../assets/icons/projectIcon";
 import { SocialIcon } from "../assets/icons/socialIcon";
 
+
 export const menuItems = [
   {
     title: "Dashboards",

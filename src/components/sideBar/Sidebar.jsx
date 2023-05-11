@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import ByeWind from "../assets/images/ByeWind.png";
-import Logo from "../assets/images/Logo.png";
-import { menuItems } from "../data/SidebarMenuItems";
+
+import ByeWind from "../../assets/images/ByeWind.png";
+import Logo from "../../assets/images/Logo.png";
+import { menuItems } from "../../data/SidebarMenuItems";
 import NavigationMenu from "./SideBarNavigationMenu";
+
 
 function Sidebar() {
   return (

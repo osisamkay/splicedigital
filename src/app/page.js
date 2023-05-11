@@ -1,12 +1,10 @@
 import React from "react";
 
-// import CalculatorApp from "../app/Calculator";
-// import Calculator from "../components/calculator.jsx";
-import DashboardLayout from "../components/DashboardLayout";
+import DashboardLayout from "../components/DashboardLayout/DashboardLayout.jsx";
+import Header from "../components/DashboardLayout/Header";
+import Navbar from "../components/DashboardLayout/Navbar.jsx";
 import Details from "../components/Details";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar.jsx";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sideBar/Sidebar.jsx";
 import Table from "../components/Table.jsx";
 import { columns, data } from "../data/TableData.jsx";
 
@@ -16,8 +14,6 @@ function Dashboard() {
       <Navbar />
       <Details />
       <Table columns={columns} data={data} />
-      {/* <Calculator /> */}
-      {/* <CalculatorApp /> */}
     </DashboardLayout>
   );
 }

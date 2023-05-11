@@ -3,7 +3,7 @@
 import { useReducer } from "react";
 
 
-import DashboardLayout from "../../components/DashboardLayout";
+import DashboardLayout from "../../components/DashboardLayout/DashboardLayout";
 import DigitButton from "./DigitButton";
 
 import OperationButton from "./OperationButton";

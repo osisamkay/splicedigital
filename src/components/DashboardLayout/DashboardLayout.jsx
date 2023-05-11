@@ -1,8 +1,10 @@
 import React from "react";
 
-import Header from "../components/Header";
-import Sidebar from "../components/Sidebar";
-import Widget from "../components/Widget";
+
+import Sidebar from "../sideBar/Sidebar";
+import Widget from "../widget/Widget";
+import Header from "./Header";
+
 
 function Dashboard({ children }) {
   return (

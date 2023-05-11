@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-import { ArrowRight } from "../assets/icons/arrowRight";
+
+import { ArrowRight } from "../../assets/icons/arrowRight";
+
 
 function NavigationMenu({ menuItems }) {
   const [openMenuIds, setOpenMenuIds] = useState([]);
