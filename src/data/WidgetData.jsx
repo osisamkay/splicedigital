@@ -26,6 +26,33 @@ export const notification = [
     type: "subscription",
   },
 ];
+export const activities = [
+  {
+    message: "Edited the details of Project X",
+    time: "5m ago",
+    avatar: Koray,
+  },
+  {
+    message: "ByeWind",
+    time: "1:32 AM",
+    avatar: Natali,
+  },
+  {
+    message: "Submitted a bug",
+    time: "Yesterday 12:39 AM",
+    avatar: Olivia,
+  },
+  {
+    message: "Modified A data in Page X",
+    time: "Last Thursday 3:34 AM",
+    avatar: Orlando,
+  },
+  {
+    message: "Deleted a page in Project X",
+    time: "Aug 11",
+    avatar: Katherine,
+  },
+];
 
 export const contactData = [
   {

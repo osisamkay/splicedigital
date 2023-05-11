@@ -1,5 +1,7 @@
 import React from "react";
 
+// import CalculatorApp from "../app/Calculator";
+// import Calculator from "../components/calculator.jsx";
 import DashboardLayout from "../components/DashboardLayout";
 import Details from "../components/Details";
 import Header from "../components/Header";
@@ -14,6 +16,8 @@ function Dashboard() {
       <Navbar />
       <Details />
       <Table columns={columns} data={data} />
+      {/* <Calculator /> */}
+      {/* <CalculatorApp /> */}
     </DashboardLayout>
   );
 }
